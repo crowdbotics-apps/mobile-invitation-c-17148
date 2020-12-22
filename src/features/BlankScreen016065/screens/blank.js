@@ -29,7 +29,11 @@ export default class Blank extends React.Component {
   render = () => (
     <View>
       <Text>Sample text content</Text>
-      <Button title="Press me!" onPress={() => alert("Pressed!")} />
+      <Button
+        title="Press me! jhgjhgjhgjgj"
+        style={styles.Button_3}
+        onPress={() => alert("Pressed!")}
+      />
       <TextInput
         placeholder="Sample text input placeholder"
         value={this.state.TextInput_4}
@@ -42,6 +46,12 @@ export default class Blank extends React.Component {
 const styles = StyleSheet.create({
   View_1: {},
   Text_2: {},
-  Button_3: {},
+  Button_3: {
+    width: 100,
+    height: 50,
+    overflow: "hidden",
+    alignSelf: "center",
+    fontFamily: "Merriweather-Italic"
+  },
   TextInput_4: {}
 })
