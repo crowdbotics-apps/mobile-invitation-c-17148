@@ -24,13 +24,26 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = {}
+  state = { Switch_3: true }
 
   render = () => (
     <View>
-      <Button title="Press me!" onPress={() => alert("Pressed!")} />
+      <Button
+        title="Press me!"
+        onPress={() => this.props.navigation.navigate("BlankScreen016065")}
+      />
+      <Switch
+        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
+        style={styles.Switch_3}
+        value={this.state.Switch_3}
+        onValueChange={nextChecked => this.setState({ Switch_3: nextChecked })}
+      />
     </View>
   )
 }
 
-const styles = StyleSheet.create({ View_1: {}, Button_2: {} })
+const styles = StyleSheet.create({
+  View_1: {},
+  Button_2: {},
+  Switch_3: { alignSelf: "flex-start" }
+})
