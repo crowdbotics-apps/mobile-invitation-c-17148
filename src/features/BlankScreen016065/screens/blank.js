@@ -32,7 +32,7 @@ export default class Blank extends React.Component {
       <Button
         title="Press me! jhgjhgjhgjgj"
         style={styles.Button_3}
-        onPress={() => alert("Pressed!")}
+        onPress={() => this.props.navigation.navigate("BlankScreen116067")}
       />
       <TextInput
         placeholder="Sample text input placeholder"
