@@ -28,7 +28,9 @@ export default class Blank extends React.Component {
     TextInput_2: "hgfhfgfhgfhfhgfh ghfhfj",
     TextInput_4: "6565",
     TextInput_5:
-      "hgfhgfghf ghfghfgh hgfghfgh hgfghfg ghfhgfhf hgfghfghf ghfhgf hgfhgfgh hgfghf hgfhgf"
+      "hgfhgfghf ghfghfgh hgfghfgh hgfghfg ghfhgfhf hgfghfghf ghfhgf hgfhgfgh hgfghf hgfhgf",
+    TextInput_8: "",
+    TextInput_9: ""
   }
 
   render = () => (
@@ -48,11 +50,22 @@ export default class Blank extends React.Component {
       <TextInput
         placeholder="Sample text input placeholder"
         multiline={true}
+        style={styles.TextInput_5}
         value={this.state.TextInput_5}
         onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
       />
       <Text>Sample text content</Text>
       <Button title="Press me!" onPress={() => alert("Pressed!")} />
+      <TextInput
+        placeholder="Sample text input placeholder"
+        value={this.state.TextInput_8}
+        onChangeText={nextValue => this.setState({ TextInput_8: nextValue })}
+      />
+      <TextInput
+        placeholder="Sample text input placeholder"
+        value={this.state.TextInput_9}
+        onChangeText={nextValue => this.setState({ TextInput_9: nextValue })}
+      />
     </View>
   )
 }
@@ -62,7 +75,9 @@ const styles = StyleSheet.create({
   TextInput_2: {},
   Text_3: {},
   TextInput_4: {},
-  TextInput_5: {},
+  TextInput_5: { height: 100 },
   Text_6: {},
-  Button_7: {}
+  Button_7: {},
+  TextInput_8: {},
+  TextInput_9: {}
 })
