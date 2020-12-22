@@ -33,7 +33,7 @@ export default class Blank extends React.Component {
         onPress={() => this.props.navigation.navigate("BlankScreen016065")}
       />
       <Switch
-        trackColor={{ false: "#C0CCDA", true: "#409EFF" }}
+        trackColor={{ false: "#d92641", true: "#dce736" }}
         style={styles.Switch_3}
         value={this.state.Switch_3}
         onValueChange={nextChecked => this.setState({ Switch_3: nextChecked })}
